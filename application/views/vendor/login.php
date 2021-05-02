@@ -74,7 +74,7 @@
             e.preventDefault();
 
             var formData = new FormData(this);
-            var url = "<?=base_url('loginvendor/check_account');?>";
+            var url = "<?=base_url('index.php/loginvendor/check_account');?>";
 
             $.ajax({
                 type : "POST",

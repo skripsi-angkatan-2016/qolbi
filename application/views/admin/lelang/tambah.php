@@ -17,7 +17,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <form method="post" action="<?=base_url('lelang/insert')?>">
+                <form method="post" action="<?=base_url('index.php/lelang/insert')?>">
 
                     <div class="form-group mb-3">
                         <label for="vendor_id">Vendor</label>

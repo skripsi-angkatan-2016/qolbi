@@ -25,6 +25,7 @@
                         <th >No Posting</th> -->
                         <th>Status</th>
                         <th>Berkas</th>
+                        <th>Jenis Surat</th>
                         <th>Status Pemeriksaan</th>
                         <th>Status Pembayaran</th>
                         <th>Catatan</th>
@@ -60,6 +61,7 @@
                                 belum ada berkas
                             <?php } ?>
                         </td>
+                        <td><?=$value['jenis_surat']?></td>
                         <td>
                             <?php if($value['status_pemeriksa']=="1")
                                     { echo "selesai pengerjaan";}

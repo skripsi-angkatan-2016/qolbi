@@ -153,7 +153,8 @@ class VendorBeranda extends CI_Controller
         $id = $this->input->post('id');
         //Prepare array of user data
         $data = array(
-            'berkas' => $berkas
+            'berkas' => $berkas,
+            'jenis_surat' => $this->input->post('jenis_surat')
         );
     
         //Pass user data to model

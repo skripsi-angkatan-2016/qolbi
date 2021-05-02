@@ -30,12 +30,12 @@
                         <tr>
                             <th>No.</th>
                             <th>Nama Proyek</th>
+                            <th>Jenis Surat </th>
                             <th>Nama Vendor</th>
                             <th>Status Pengerjaan</th>
-                            <?php if($this->session->userdata('role')=="pemeriksa" || "pembayaran"){?>
-                                <th>Berkas</th>
-                            <?php } ?>
-                            <th> </th>
+                                <?php if($this->session->userdata('role')=="pemeriksa" || "pembayaran"){?>
+                                    <th>Berkas</th>
+                                <?php } ?>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -44,6 +44,7 @@
                         <tr>
                             <td><?=$key+1?></td>
                             <td><?=$item['nama_proyek']?></td>
+                            <th><?=$item['jenis_surat'] ?? 'belum ada surat'?></th>
                             <td><?=$item['nama']?></td>
                             <td>
                                 <?=$item['status']==null ? '<span class="text-danger">menunggu konfirmasi</span>' : '<span class="text-success">'. $item['status'].'</span>' ?>
